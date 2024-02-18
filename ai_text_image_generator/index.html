@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI image Generator</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css" >
+    <script src="index.js" defer></script>
+</head>
+
+<body class="container">
+         
+    <section class="image-generator">
+ <img src="images/moon.svg" id="icon"/>
+
+        <div class="content">
+            <h1>Text to Image AI Generator In JavaScript </h1>
+
+            <form action="#" class="generate-form">
+                <input type="text" class="prompt-input" placeholder="Describe any image here">
+                <div class="controls">
+                        <select class="img-quantity">
+                         <option value="1">1 image</option> 
+                            <option value="2">2 images</option>
+                            <option value="3">3 images</option>
+                            <option value="4" selected>4 images</option>
+                        </select>
+                    <button type="submit" class="generate-btn"> Generate
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <section class="image-gallery">
+        <div class="img-card">
+            <img src="images/bg.jpg" alt="image">
+            <a href="#" class="download-btn" >
+                <img src="images/download.svg" alt="download icon">              
+            </a>
+            
+            <!-- Share Button Included Here -->
+            <div class="share-btn-container">
+                <button class="share-btn" onclick="toggleShareOptions()">
+                    <img src="images/share.svg" alt="share icon">
+                </button>
+                <div class="share-options">
+                    <div class="social-media">
+                        <button class="social-media-btn"><i class="fab fa-whatsapp"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-instagram"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-twitter"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-linkedin-in"></i></button>
+                    </div>
+                    <div class="link-container">
+                        <p class="link">https://ai.com/share</p>
+                        <button class="copy-btn">copy</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Share Button Section -->
+        </div>
+        <div class="img-card">
+            <img src="images/bg.jpg"  alt="image">
+            <a href="#" class="download-btn" >
+                <img src="images/download.svg" alt="download icon">            
+            </a>
+            
+            <!-- Share Button Included Here -->
+            <div class="share-btn-container">
+                <button class="share-btn" onclick="toggleShareOptions()">
+                    <img src="images/share.svg" alt="share icon">
+                </button>
+                <div class="share-options">
+                    <div class="social-media">
+                        <button class="social-media-btn"><i class="fab fa-whatsapp"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-instagram"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-twitter"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-linkedin-in"></i></button>
+                    </div>
+                    <div class="link-container">
+                        <p class="link">https://ai.com/share</p>
+                        <button class="copy-btn">copy</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Share Button Section -->
+        </div>
+        <div class="img-card">
+            <img src="images/bg.jpg"  alt="image">
+            <a href="#" class="download-btn" >
+                <img src="images/download.svg" alt="download icon">            
+            </a>
+            
+            <!-- Share Button Included Here -->
+            <div class="share-btn-container">
+                <button class="share-btn" onclick="toggleShareOptions()">
+                    <img src="images/share.svg" alt="share icon">
+                </button>
+                <div class="share-options">
+                    <div class="social-media">
+                        <button class="social-media-btn"><i class="fab fa-whatsapp"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-instagram"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-twitter"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-linkedin-in"></i></button>
+                    </div>
+                    <div class="link-container">
+                        <p class="link">https://ai.com/share</p>
+                        <button class="copy-btn">copy</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Share Button Section -->
+        </div>
+        <div class="img-card">
+            <img src="images/bg.jpg" alt="image">
+            <a href="#" class="download-btn" >
+                <img src="images/download.svg" alt="download icon">            
+            </a>
+            
+            <!-- Share Button Included Here -->
+            <div class="share-btn-container">
+                <button class="share-btn" onclick="toggleShareOptions()">
+                    <img src="images/share.svg" alt="share icon">
+                </button>
+                <div class="share-options">
+                    <div class="social-media">
+                        <button class="social-media-btn"><i class="fab fa-whatsapp"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-instagram"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-twitter"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social-media-btn"><i class="fab fa-linkedin-in"></i></button>
+                    </div>
+                    <div class="link-container">
+                        <p class="link">https://ai.com/share</p>
+                        <button class="copy-btn">copy</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Share Button Section -->
+        </div>
+
+    </section>
+</body>
+</html>
+
