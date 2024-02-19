@@ -1,4 +1,4 @@
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "Your API Key";
 
 const generateForm = document.querySelector(".generate-form");
 const imageGallery = document.querySelector(".image-gallery");
