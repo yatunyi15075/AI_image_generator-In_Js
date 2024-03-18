@@ -1,25 +1,23 @@
-const OPENAI_API_KEY = "Your API Key";
+const OPENAI_API_KEY = "Your API kEY";
 
 const generateForm = document.querySelector(".generate-form");
 const imageGallery = document.querySelector(".image-gallery");
 const icon = document.getElementById("icon");
 const shareBtn = document.querySelector(".share-btn");
-const shareOptions = document.querySelctor(".share-options");
+const shareOptions = document.querySelector(".share-options"); // Corrected typo here
 
 let isImageGenerating = false;
 
-//share btn
-
+// Share button
 shareBtn.addEventListener('click', () => {
     shareOptions.classList.toggle('active');
-})
+});
 
-
-// dark theme
+// Dark theme
 icon.onclick = function () {
     document.body.classList.toggle("dark-theme");
     icon.src = document.body.classList.contains("dark-theme") ? "images/sun.svg" : "images/moon.svg";
-}
+};
 
 const updateImageCard = (imageDataArray) => {
     imageDataArray.forEach((imgObject, index) => {
@@ -35,9 +33,9 @@ const updateImageCard = (imageDataArray) => {
             imgCard.classList.remove("loading");
             downloadBtn.setAttribute("href", aiGeneratedImg);
             downloadBtn.setAttribute("download", `${new Date().getTime()}.jpg`);
-        }
+        };
     });
-}
+};
 
 const generateAiImages = async (userPrompt, userImgQuantity) => {
     try {
@@ -67,7 +65,7 @@ const generateAiImages = async (userPrompt, userImgQuantity) => {
     } finally {
         isImageGenerating = false;
     }
-}
+};
 
 const handleFormSubmission = (e) => {
     e.preventDefault();
@@ -76,7 +74,7 @@ const handleFormSubmission = (e) => {
     const userPrompt = e.srcElement[0].value;
     const userImgQuantity = e.srcElement[1].value;
 
-    const imgCardMarkup = Array.from({length:userImgQuantity}, ()=> `
+    const imgCardMarkup = Array.from({length:userImgQuantity}, () => `
     <div class="img-card loading">
     <img src="images/loading.svg" alt="loading svg">
     <a href="#" class="download-btn" >
@@ -105,6 +103,6 @@ const handleFormSubmission = (e) => {
 </div>
     `).join(" ");
     imageGallery.innerHTML = imgCardMarkup;
-    generateAiImages (userPrompt, userImgQuantity);
-}
-generateForm.addEventListener ("Submit", handleFormSubmission);
+    generateAiImages(userPrompt, userImgQuantity);
+};
+generateForm.addEventListener("submit", handleFormSubmission); // Changed "Submit" to "submit"
