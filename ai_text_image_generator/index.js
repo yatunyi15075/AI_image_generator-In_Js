@@ -105,4 +105,4 @@ const handleFormSubmission = (e) => {
     imageGallery.innerHTML = imgCardMarkup;
     generateAiImages(userPrompt, userImgQuantity);
 };
-generateForm.addEventListener("submit", handleFormSubmission); // Changed "Submit" to "submit"
+generateForm.addEventListener("submit", handleFormSubmission); 
